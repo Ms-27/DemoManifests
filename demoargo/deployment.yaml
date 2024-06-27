@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: demo-deployment
-  namespace: demoargo-tmp
+  namespace: demoargo
 spec:
   replicas: 3
   selector:
