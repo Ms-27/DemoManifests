@@ -14,3 +14,4 @@ spec:
         image: alpine:latest
         command: 
         - echo "L’application sera synchronisé avec un nouvel état désiré."
+      restartPolicy: Never

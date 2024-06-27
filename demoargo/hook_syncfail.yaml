@@ -14,3 +14,4 @@ spec:
         image: alpine:latest
         command: 
         - echo "L’application ne s'est pas synchronisé."
+      restartPolicy: Never
