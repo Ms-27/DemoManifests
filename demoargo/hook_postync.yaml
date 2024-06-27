@@ -12,6 +12,6 @@ spec:
       containers:
       - name: presync-notification
         image: alpine:latest
-        command: 
-        - echo "L’application est bien synchronisé dans l'état désiré."
+        command: ["/bin/echo"]
+        args: ["L’application est bien synchronisé dans l'état désiré."]
       restartPolicy: Never
