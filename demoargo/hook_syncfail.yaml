@@ -12,6 +12,5 @@ spec:
       containers:
       - name: presync-notification
         image: alpine:latest
-        command: ["/bin/echo"]
-        args: ["L’application ne s'est pas synchronisé."]
+        command: ["/bin/echo", "L’application ne s'est pas synchronisé."]
       restartPolicy: Never
