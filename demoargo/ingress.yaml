@@ -15,8 +15,3 @@ spec:
             name: demo-service
             port:
               number: 80
-  # defaultBackend:
-  #   service:
-  #     name: demo-service
-  #     port:
-  #       number: 80
