@@ -18,8 +18,8 @@ spec:
         image: 989988/demoapp:1.0.0
         resources:
           requests:
-            memory: "64Mi"
-            cpu: "250m"
+            memory: "256Mi"
+            cpu: "500m"
           limits:
             memory: "512Mi"
             cpu: "2Gi"
