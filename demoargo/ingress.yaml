@@ -2,6 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: test-ingress
+  namespace: demoargo
 spec:
   rules:
   - host: 192.168.49.2
