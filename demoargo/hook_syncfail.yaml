@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  generateName: schema-migrate-
+  annotations:
+    argocd.argoproj.io/hook: SyncFail
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
+    namespace: demoargo
+spec:
+  template:
+    spec:
+      containers:
+      - name: presync-notification
+        image: alpine:latest
+        command: 
+        - echo "L’application ne s'est pas synchronisé."
