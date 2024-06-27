@@ -3,8 +3,19 @@ kind: Ingress
 metadata:
   name: test-ingress
 spec:
-  defaultBackend:
-    service:
-      name: demo-service
-      port:
-        number: 80
+  rules:
+  - host: 192.168.49.2
+    http:
+      paths:
+      - path: /truc
+        pathType: Prefix
+        backend:
+          service:
+            name: demo-service
+            port:
+              number: 80
+  # defaultBackend:
+  #   service:
+  #     name: demo-service
+  #     port:
+  #       number: 80
