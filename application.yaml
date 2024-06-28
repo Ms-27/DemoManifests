@@ -11,4 +11,4 @@ spec:
     path: demoargo
   destination:
     server: https://kubernetes.default.svc
-    namespace: demoargo
+    # namespace: demoargo
