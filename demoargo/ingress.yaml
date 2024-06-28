@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: test-ingress
-  namespace: demoargo
+  namespace: spring-apps-dev
 spec:
   rules:
   - host: myapp.local
